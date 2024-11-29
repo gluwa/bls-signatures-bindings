@@ -1,0 +1,15 @@
+{
+  "name": "bls-signatures-ts-bindings",
+  "collaborators": [
+    "beqaabu <beqa.abuladze@gluwa.com>"
+  ],
+  "description": "Bindings for no_std Aggregate BLS Signatures",
+  "version": "0.1.0",
+  "files": [
+    "bls_signatures_ts_bindings_bg.wasm",
+    "bls_signatures_ts_bindings.js",
+    "bls_signatures_ts_bindings.d.ts"
+  ],
+  "main": "bls_signatures_ts_bindings.js",
+  "types": "bls_signatures_ts_bindings.d.ts"
+}
