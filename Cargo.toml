@@ -1,7 +1,7 @@
 [package]
-authors = ["beqaabu <beqa.abuladze@gluwa.com>"]
+authors = ["Gluwa Inc. Developer Support <support.dev@gluwa.com>"]
 description = "Bindings for no_std Aggregate BLS Signatures"
-name = "bls-signatures-ts-bindings"
+name = "bls-signatures-bindings"
 version = "0.1.0"
 edition = "2021"
 
