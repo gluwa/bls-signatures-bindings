@@ -1,6 +1,6 @@
 # TS Bindings for `no_std` BLS Signatures
 
-Creates bindings for https://github.com/gluwa/bls-signatures. 
+Creates bindings for https://github.com/gluwa/bls-signatures.
 
 ## Installation
 ```bash
@@ -31,4 +31,3 @@ async function main() {
 ```
 
 Compile it with `tsc` and run with `dist/index.js`. 
-

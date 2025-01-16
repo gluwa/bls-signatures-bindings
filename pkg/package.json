@@ -5,10 +5,13 @@
   ],
   "description": "Bindings for no_std Aggregate BLS Signatures",
   "version": "0.1.0",
+  "license": "MIT AND Apache-2.0",
   "files": [
     "bls_signatures_bindings_bg.wasm",
     "bls_signatures_bindings.js",
-    "bls_signatures_bindings.d.ts"
+    "bls_signatures_bindings.d.ts",
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
   ],
   "main": "bls_signatures_bindings.js",
   "types": "bls_signatures_bindings.d.ts"

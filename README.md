@@ -1,20 +1,33 @@
 # TS Bindings for `no_std` BLS Signatures
 
-Creates bindings for https://github.com/gluwa/bls-signatures. `./pkg` needs to be published to npm
+Creates bindings for https://github.com/gluwa/bls-signatures.
+
+## Installation
+```bash
+npm install @gluwa/bls-signatures-bindings
+```
 
 ## Usage
+Import necessary structures from the package and use them as needed.
+```typescript
+import { WasmPrivateKey } from 'bls_signatures_bindings';
 
-Inside `ts-example` there is an example of how to use the bindings. You should additionally make a symbolic link inside the dir.
-```bash
-ln -s ../pkg ./pkg
+async function main() {
+    const seed = new Uint8Array(32);
+    console.log("seed", seed);
+
+    const privateKey = WasmPrivateKey.generate(seed);
+    console.log("privateKey", privateKey.as_bytes());
+
+    const publicKey = privateKey.public_key();
+    console.log("publicKey", publicKey.as_bytes());
+
+    const message = new TextEncoder().encode("Hello, World!");
+    const signature = privateKey.sign(message);
+
+    const isValid = publicKey.verify(signature, message);
+    console.log("Signature valid:", isValid);
+}
 ```
 
-After that you can build the project with
-```bash
-npm run build
-```
-
-and then run it
-```bash
-npm start
-```
+Compile it with `tsc` and run with `dist/index.js`. 
