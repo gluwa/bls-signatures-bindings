@@ -1,0 +1,50 @@
+name: Build and publish to npm
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+      - uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install wasm-pack
+        run: |
+          cargo install wasm-pack
+
+      - name: Build wasm package
+        run: |
+          wasm-pack build --target nodejs --out-dir pkg
+
+      - name: Copy COPYRIGHT
+        run: |
+          cp COPYRIGHT pkg/
+
+      - name: Remove .gitignore
+        run: |
+          rm pkg/.gitignore
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@gluwa'
+
+      - name: Publish to npm
+        run: |
+          cd pkg
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
