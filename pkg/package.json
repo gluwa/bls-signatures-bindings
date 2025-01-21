@@ -6,6 +6,10 @@
   "description": "Bindings for no_std Aggregate BLS Signatures",
   "version": "0.1.0",
   "license": "MIT AND Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gluwa/bls-signatures-bindings"
+  },
   "files": [
     "bls_signatures_bindings_bg.wasm",
     "bls_signatures_bindings.js",

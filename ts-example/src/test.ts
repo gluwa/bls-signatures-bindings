@@ -1,4 +1,4 @@
-import { WasmPrivateKey } from '../pkg/bls_signatures_bindings.js';
+import { WasmPrivateKey } from 'bls-signatures-bindings';
 
 async function main() {
     const seed = new Uint8Array(32);

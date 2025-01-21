@@ -4,7 +4,7 @@ Creates bindings for https://github.com/gluwa/bls-signatures.
 
 ## Installation
 ```bash
-npm install @gluwa/bls-signatures-bindings
+npm install bls-signatures-bindings
 ```
 
 ## Usage
