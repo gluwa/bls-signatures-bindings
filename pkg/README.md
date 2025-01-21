@@ -10,7 +10,7 @@ npm install bls-signatures-bindings
 ## Usage
 Import necessary structures from the package and use them as needed.
 ```typescript
-import { WasmPrivateKey } from 'bls_signatures_bindings';
+import { WasmPrivateKey } from 'bls-signatures-bindings';
 
 async function main() {
     const seed = new Uint8Array(32);
