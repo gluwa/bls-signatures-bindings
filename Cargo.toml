@@ -2,7 +2,7 @@
 authors = ["Gluwa Inc. Developer Support <support.dev@gluwa.com>"]
 description = "Bindings for no_std Aggregate BLS Signatures"
 name = "bls-signatures-bindings"
-version = "0.2.0"
+version = "0.2.2"
 edition = "2021"
 license = "MIT AND Apache-2.0"
 repository = "https://github.com/gluwa/bls-signatures-bindings"
