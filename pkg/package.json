@@ -4,7 +4,7 @@
     "Gluwa Inc. Developer Support <support.dev@gluwa.com>"
   ],
   "description": "Bindings for no_std Aggregate BLS Signatures",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "license": "MIT AND Apache-2.0",
   "repository": {
     "type": "git",
