@@ -40,7 +40,7 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org/'
-        run: npm install -g npm@latest  # Ensure npm 11.5.1 or later is installed
         run: |
+          npm install -g npm@latest  # Ensure npm 11.5.1 or later is installed
           cd pkg
           npm publish --access public
