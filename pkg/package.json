@@ -4,11 +4,11 @@
     "Gluwa Inc. Developer Support <support.dev@gluwa.com>"
   ],
   "description": "Bindings for no_std Aggregate BLS Signatures",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "license": "MIT AND Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gluwa/bls-signatures-bindings"
+    "url": "git+https://github.com/gluwa/bls-signatures-bindings.git"
   },
   "files": [
     "bls_signatures_bindings_bg.wasm",
