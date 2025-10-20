@@ -1,4 +1,4 @@
-import { WasmPrivateKey } from 'bls-signatures-bindings';
+import { WasmPrivateKey } from '@gluwa/bls-signatures-bindings';
 
 async function main() {
     const seed = new Uint8Array(32);

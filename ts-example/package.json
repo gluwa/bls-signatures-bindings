@@ -17,6 +17,6 @@
     "wasm-pack": "^0.13.1"
   },
   "dependencies": {
-    "bls-signatures-bindings": "^0.1.0"
+    "@gluwa/bls-signatures-bindings": "^0.1.0"
   }
 }

@@ -1,16 +1,19 @@
 # TS Bindings for `no_std` BLS Signatures
 
-Creates bindings for https://github.com/gluwa/bls-signatures.
+Creates bindings for <https://github.com/gluwa/bls-signatures>
 
 ## Installation
+
 ```bash
-npm install bls-signatures-bindings
+npm install @gluwa/bls-signatures-bindings
 ```
 
 ## Usage
+
 Import necessary structures from the package and use them as needed.
+
 ```typescript
-import { WasmPrivateKey } from 'bls-signatures-bindings';
+import { WasmPrivateKey } from '@gluwa/bls-signatures-bindings';
 
 async function main() {
     const seed = new Uint8Array(32);
@@ -30,4 +33,4 @@ async function main() {
 }
 ```
 
-Compile it with `tsc` and run with `dist/index.js`. 
+Compile it with `tsc` and run with `dist/index.js`.
