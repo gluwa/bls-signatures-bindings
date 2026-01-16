@@ -11,6 +11,6 @@ repository = "https://github.com/gluwa/bls-signatures-bindings"
 crate-type = ["cdylib"]
 
 [dependencies]
-bls-signatures = { git = "https://github.com/gluwa/bls-signatures" }
+bls-signatures = { git = "https://github.com/gluwa/bls-signatures", tag = "v0.15.0" }
 wasm-bindgen = "0.2.95"
 getrandom = { version = "0.2.15", features = ["js"] }
