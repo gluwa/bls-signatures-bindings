@@ -2,7 +2,7 @@
 authors = ["Gluwa Inc. Developer Support <support.dev@gluwa.com>"]
 description = "Bindings for no_std Aggregate BLS Signatures"
 name = "bls-signatures-bindings"
-version = "0.2.6"
+version = "0.3.0"
 edition = "2021"
 license = "MIT AND Apache-2.0"
 repository = "https://github.com/gluwa/bls-signatures-bindings"
@@ -11,6 +11,6 @@ repository = "https://github.com/gluwa/bls-signatures-bindings"
 crate-type = ["cdylib"]
 
 [dependencies]
-bls-signatures = { git = "https://github.com/gluwa/bls-signatures", tag = "v0.15.0" }
+bls-signatures = { git = "https://github.com/gluwa/bls-signatures", tag = "v0.16.0" }
 wasm-bindgen = "0.2.95"
 getrandom = { version = "0.2.15", features = ["js"] }
